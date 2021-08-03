@@ -1,0 +1,83 @@
+section.section-01 {
+    height: auto;
+  
+    @include mediaQuery(lg) {
+        .box-section1 {
+            margin: 0 auto;
+
+            width: 300px;
+            height:300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            &::after , &::before {
+                content: "";
+                position: absolute;
+                height:20px;
+                width: 20px;
+                border: 1px solid #000018;
+                border-left: transparent;
+                border-bottom: transparent;
+                box-sizing: border-box;
+                border-radius: 5px;
+                background-color: transparent;
+            }
+            &::after {
+                top: 0;
+                right: 0;
+            }
+            &::before {
+                left: 0;
+                bottom: 0;
+                transform: rotate(180deg);
+            }
+            &:hover::before , &:hover::after {
+                width:100%;
+                height:100%;
+                background: #0f0f2abd; 
+                border-radius: 8px;
+                transition: all .7s ease;
+                z-index: -1;
+                
+            }
+            &:hover {
+                .rotate-box h5 {
+                    color: $font-primary !important;
+                }
+                .rotate-box p {
+                    color: rgb(215, 215, 225) !important;
+                }
+            }
+            
+            
+
+
+        }
+        .box-1 {
+            transform: translateX(95px) rotate(45deg) translateY(110px);
+
+        }
+        .box-2 {
+            transform: translateX(60px) rotate(45deg) translateY(110px);
+            
+
+        }
+        .box-3 {
+            transform: translateX(0px) rotate(45deg) translateY(0px);
+        }
+        
+        .rotate-box {
+            width: 100%;
+            height: 100%;;
+            transform: rotate(-45deg);
+            padding-top: rem(24px);
+        }
+    }
+
+    
+}

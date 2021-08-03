@@ -1,0 +1,10 @@
+.users {
+    height: auto;
+    img {
+        width: rem(100px) !important;
+    }
+    .swiper-button-next , .swiper-button-prev {
+        transform: translateY(-50px);
+    }
+    
+}

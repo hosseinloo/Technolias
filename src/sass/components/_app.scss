@@ -1,0 +1,56 @@
+.app {
+   
+    background: linear-gradient(180deg , #011134fa , #040a39b8 ) , url('../../public/images/app/appBackground3.jpg') no-repeat center center/ cover;
+    border-top-left-radius: 50% 50px;
+    border-top-right-radius: 50% 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-attachment: fixed;
+    .min-vh-50 {
+        min-height: 40vh;
+    }
+    h2 {
+        background: linear-gradient(120deg , #ffffff , #fbfbffd0) !important;
+        background-clip: text !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+    }
+
+    .app-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: rem(50px);
+        @include mediaQuery(lg) {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        a {
+            background-color: rgb(23, 23, 23);
+            color: whitesmoke;
+
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            
+            
+            
+            
+            border-radius: 5px;
+            
+            i {
+                font-size: rem(28px);
+                padding-right: rem(3px);
+                
+            }
+            &:hover {
+                background-color: rgb(29, 29, 30);
+                color: rgb(239, 239, 255);
+                transition: all .4s linear;
+            }        
+        }
+    }
+}

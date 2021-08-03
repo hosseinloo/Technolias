@@ -1,0 +1,80 @@
+header#header {
+    
+    z-index: 100000;
+    height: 90px;
+    transition: all .5s linear;
+
+    .logo {
+        display: block;
+        font-weight: bold;
+        font-size: rem(22px);
+        font-family:  'montserrat-font';
+        
+    }
+    nav .nav-parent {
+        transition: all 0.7s;
+        ul {
+            height: auto;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: fixed;
+            top: 90px;
+            left: 0;
+            right: 0;
+            background: linear-gradient(120deg , #020245e0  , #090938d7) !important;
+
+            border-bottom-left-radius: 50% 20px;
+            border-bottom-right-radius: 50% 20px;
+
+            
+            @include mediaQuery(lg) {
+                position: static;
+                background: transparent !important;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                align-self: center;
+                a {
+                    padding: 0 rem(20px) !important;
+                    text-align: center !important;
+                    transition: all .5s ease;
+                    &:hover {
+                        color: $secondary;
+                        transition: all .5s ease;
+                        transform: translateY(-2px);
+                        
+                    }
+                }
+
+                
+
+            }
+            
+            a {
+                display: inline-block !important;
+                width: 100% !important;
+                padding: rem(20px) 0;
+                color: $font-primary;
+                &:hover {
+                    color: $secondary;
+                }
+                
+            }
+            
+        }
+    }
+    .navbar-style {
+        a, i {
+            color: $font-primary;
+            display: block;
+            align-self: center;
+        }
+        
+    }
+
+}
+

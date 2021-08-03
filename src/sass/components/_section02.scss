@@ -1,0 +1,20 @@
+section.section-02 {
+    height: auto;
+    .card-sec02 {
+        box-shadow: 1px 1px 10px #00001830;
+        border: none;
+        outline: none;
+        
+    }
+    .box-sec02 {
+        border: none;
+        outline: none;
+        span {
+            color: #0f0f53d0;
+            font-weight: bolder;
+        }
+        h5 {
+            color: #000040
+        }
+    }
+}

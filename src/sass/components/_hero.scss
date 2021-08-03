@@ -1,0 +1,46 @@
+section.hero {
+    background: linear-gradient(150deg, rgba(1, 1, 41, 0.68) 32%, rgba(13, 6, 55, 0.394) 100%) , url('../../public/images/hero/hero.jpg') no-repeat center center/ cover;
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+    background-attachment: fixed;
+    h1 {
+        color: $font-primary !important ;
+        text-transform: uppercase;
+        height: 100px;
+        
+    }
+    p {
+        color: $font-primary;
+    }
+    
+    .owl-item {
+        display: flex;
+        justify-content: center;
+        
+        border-radius: rem(30px);
+
+        
+        img {
+            box-shadow: 0px 0px 20px rgba(15, 4, 79, 0.163);
+            border-radius: rem(30px);
+            max-width: rem(248px);
+            display: inline-block;
+            margin-right: rem(-25px);
+
+            @include mediaQueryMax(xs) {
+                margin-bottom: rem(20px);
+            }
+            
+            
+            
+            @include mediaQuery(lg) {
+                margin-left: auto !important;
+                margin-right: 0;
+            }
+            
+            
+        }
+
+    }
+    
+}

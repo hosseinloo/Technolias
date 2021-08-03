@@ -1,0 +1,54 @@
+footer.footer {
+    height: auto;
+    .footer-about {
+        margin-bottom: rem(50px);
+        a {
+            color: rgba(32, 32, 111, 0.932);
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            transition: all .4s;
+            &:hover {
+                color: whitesmoke;
+                background-color: rgba(32, 32, 111, 0.932);
+                transition: all .6s ease;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        display: inline-block;
+        color: rgb(44, 45, 52);
+        margin-bottom: rem(10px);
+
+        
+    }
+    ul {
+        padding-left: rem(7px);
+    }
+    h5 {
+        color: $primary;
+        padding-bottom: rem(20px);
+        
+    }
+    .nav-footer, .download-footer, .service-footer {
+        margin-bottom: rem(30px);
+        a {
+            &:hover {
+                color: $primary;
+                transition:all .3s ease;
+            }
+        }
+    }
+
+    .copyright , .credit {
+        color: $primary;
+        a {
+            font-size: 20px;
+        }
+    }
+   
+    
+}
